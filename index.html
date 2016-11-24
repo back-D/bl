@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Form</title>
+</head>
+<body>
+
+<section class="contact-section">
+    <div class="container-fluid">
+        <div class="container">
+            <div class="wrapper">
+                <img src="img/bg-2.png" class="bg-img">
+                <div class="row">
+                    <div class="col-lg-7 col-md-12">
+                        <h1 class="title">Получите в подарок</h1>
+                        <h1 class="title">100 пластиковых визиток</h1>
+                        <h1 class="title">с Вашим дизайном</h1>
+                        <h1 class="title">при заказе от 10 000 тысяч гривен</h1>
+                    </div>
+                    <div class="col-lg-5">
+                        <img src="img/bl4_img.png" class="card-design">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-5 col-md-12">
+                        <p class="description">Оставьте заявку в течении 15 минут наш менеджер
+                            рассчитает стоимость Вашего заказа и подготовит
+                            коммерческое предложение</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6 col-md-12">
+                        <form action="#" id="contact-form">
+                            <div class="input-item">
+                                <img src="img/border.png" class="input-border">
+                                <input type="text" placeholder="Ваше имя" id="name" name="name" data-toggle="tooltip" data-placement="right" title="Введите имя">
+                            </div>
+                            <div class="input-item">
+                                <img src="img/border-2.png" class="input-border">
+                                <input type="text" placeholder="Ваш телефон" id="phone" name="phone" data-toggle="tooltip" data-placement="right" title="Введите телефон в формате 000-000-00-00">
+                            </div>
+                            <div class="input-item">
+                                <img src="img/border.png" class="input-border">
+                                <input type="email" placeholder="Ваш e-mail" id="email" name="email"  data-toggle="tooltip" data-placement="right" title="Введите email в формате example@email.com">
+                            </div>
+                            <button type="submit" id="submit-btn">
+                                <span>СДЕЛАТЬ ЗАКАЗ</span>
+                                <img src="img/bl4_btn.png" id="submit-btn-img">
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="success"></div>
+    <div class="success-form">
+        <span>форма успешно отправлена</span>
+        <img src="img/modal_bg.png">
+        <a href="#"><img src="img/close.png" id="close"></a>
+    </div>
+</section>
+
+</body>
+</html>

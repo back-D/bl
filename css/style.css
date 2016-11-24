@@ -1,0 +1,219 @@
+@font-face {
+    font-family: "PantonBlack";
+    src: url("../fonts/panton_black/panton_black.eot");
+    src: url("../fonts/panton_black/panton_black.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/panton_black/panton_black.woff") format("woff"),
+    url("../fonts/panton_black/panton_black.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "PantonBold";
+    src: url("../fonts/panton_bold/panton-bold.eot");
+    src: url("../fonts/panton_bold/panton-bold.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/panton_bold/panton-bold.woff") format("woff"),
+    url("../fonts/panton_bold/panton-bold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "PantonRegular";
+    src: url("../fonts/panton_regular/panton.eot");
+    src: url("../fonts/panton_regular/panton.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/panton_regular/panton.woff") format("woff"),
+    url("../fonts/panton_regular/panton.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+body, html {
+    font-family: "PantonBlack", "PantonBold", "PantonRegular", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1;
+    color: #6291d7;
+    margin: 0;
+}
+.contact-section {
+    position: relative;
+    height: 982px;
+    background-image: url("../img/bg.png");
+    z-index: 1;
+    overflow: hidden;
+}
+
+.bg-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+.wrapper {
+    margin-top: 236px;
+}
+
+.row {
+    margin-left: -1px;
+}
+
+.contact-section .title {
+    font-size: 36px;
+    font-family: "PantonBlack";
+    color: rgb(98, 145, 215);
+    text-transform: uppercase;
+    line-height: 1;
+    text-align: left;
+    font-weight: 700;
+    margin: 0;
+    white-space: nowrap;
+}
+
+.contact-section .title:nth-child(2) {
+    color: #2e3192;
+}
+
+.contact-section .card-design {
+    position: absolute;
+    top: -48px;
+    left: 19px;
+}
+
+.contact-section .description {
+    font-size: 16px;
+    font-family: "PantonBold";
+    color: rgb(98, 145, 215);
+    line-height: 1.15;
+    text-align: left;
+    font-weight: 700;
+    margin-top: 21px;
+}
+
+#contact-form {
+    margin-top: 3px;
+}
+
+#contact-form .input-item {
+    position: relative;
+}
+
+#contact-form .input-item input {
+    position: relative;
+    width: 500px;
+    font-size: 16px;
+    font-family: "PantonBold";
+    margin: 24px 0;
+    border: none;
+    padding: 1px 2px;
+    z-index: 5;
+    background: transparent;
+}
+
+#contact-form .input-item input:focus {
+    outline: none;
+}
+
+::-webkit-input-placeholder {color:rgb(98, 145, 215);}
+::-moz-placeholder          {color:rgb(98, 145, 215);}
+:-moz-placeholder           {color:rgb(98, 145, 215);}
+:-ms-input-placeholder      {color:rgb(98, 145, 215);}
+
+.input-border {
+    position: absolute;
+    top: 6px;
+    left: -20px;
+    z-index: 4;
+}
+
+#submit-btn {
+    border: none;
+}
+
+#submit-btn span{
+    position: absolute;
+    bottom: -58px;
+    right: 94px;
+    color: #fff;
+    font-family: 'PantonRegular';
+    z-index: 3;
+    font-size: 14px;
+}
+
+#submit-btn img {
+    position: absolute;
+    bottom: -82px;
+    right: 49px;
+    z-index: 2;
+}
+
+.success {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+    width: 100%;
+    height: 982px;
+    background: #000000;
+    opacity: 0.5;
+    z-index: 10;
+}
+
+.success-form {
+    display: none;
+    position: fixed;
+    top: 40%;
+    left: 40%;
+    z-index: 11;
+}
+
+.success-form span {
+    position: absolute;
+    top: 68px;
+    left: 42px;
+    font-family: "PantonBlack";
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.success-form a {
+    position: absolute;
+    top: 6px;
+    left: 220px;
+}
+
+@media (max-width: 1200px) {
+    .contact-section {
+        width: 100%;
+        height: 100vh;
+        min-height: 750px;
+    }
+
+    .card-design {
+        display: none;
+    }
+
+    .bg-img {
+        width: 100%;
+    }
+
+    .wrapper {
+        margin-top: 30px;
+    }
+    #contact-form{
+        max-width: 500px;
+        margin: 0 auto;
+    }
+
+    .contact-section .title {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .contact-section .description {
+        text-align: center;
+    }
+
+}
